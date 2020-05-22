@@ -3,7 +3,7 @@
 load $BATS_TEST_DIRNAME/_test_helper.bash
 
 SECRET_CONTENT="My secret content"
-SECRET_CONTENT_ENC="U2FsdGVkX1/kkWK36bn3fbq5DY2d+JXL2YWoN/eoXA1XJZEk9JS7j/856rXK9gPn"
+SECRET_CONTENT_ENC="U2FsdGVkX19JFit+m5930HUydFWxIjJQ2QFbndVUo5e6WG9ArJbRMN3Zj1twPtQQ"
 
 function check_repo_is_clean {
   git diff-index --quiet HEAD --
@@ -98,7 +98,7 @@ function check_repo_is_clean {
   git config --local --add core.quotePath true
 
   FILENAME="Mig – røve"  # Danish
-  SECRET_CONTENT_ENC="U2FsdGVkX19Fp9SwTyQ+tz1OgHNIN0OJ+6sMgHIqPMzfdZ6rZ2iVquS293WnjJMx"
+  SECRET_CONTENT_ENC="U2FsdGVkX19afUsE8kPrcKcNITI1w0zb35ugc3AA2eUoFnLIfv7U13d6H9nRTkbo"
 
   encrypt_named_file "$FILENAME" "$SECRET_CONTENT"
   [[ "${lines[0]}" = *"Encrypt file \"$FILENAME\"" ]]
