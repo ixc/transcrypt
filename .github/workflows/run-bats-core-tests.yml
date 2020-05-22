@@ -1,12 +1,7 @@
 name: Tests
 
-on:
-  # Only run tests on push to master branch
-  push:
-    branches: [master]
-  # Run tests for all pull request changes targeting master
-  pull_request:
-    branches: [master]
+# Run tests on all pushes and PRs
+on: [push, pull_request]
 
 jobs:
   test:
