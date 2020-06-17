@@ -3,7 +3,7 @@
 load $BATS_TEST_DIRNAME/_test_helper.bash
 
 SECRET_CONTENT="My secret content"
-SECRET_CONTENT_ENC="U2FsdGVkX1/kkWK36bn3fbq5DY2d+JXL2YWoN/eoXA1XJZEk9JS7j/856rXK9gPn"
+SECRET_CONTENT_ENC="U2FsdGVkX19JFit+m5930HUydFWxIjJQ2QFbndVUo5e6WG9ArJbRMN3Zj1twPtQQ"
 
 @test "cleanup: transcrypt -f flush clears cached plaintext" {
   encrypt_named_file sensitive_file "$SECRET_CONTENT"
